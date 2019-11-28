@@ -49,7 +49,7 @@ def main():
             current_loc = str(myloc.lat) + ',' + str(myloc.lng)
             webbrowser.open(
                 'https://maps.googleapis.com/maps/api/directions/json?origin=' + current_loc + '&destination='
-                + event['location'] + '&key=***YOUR_KEY_HERE***&travel_mode=transit&arrival_time='
+                + event['location'] + '&key=***YOUR_KEY_HERE***&mode=transit&arrival_time='
                 + start_time)
                 # 'https://www.google.com/maps/dir/?api=1&origin=' + current_loc +
                 # '&destination=' + event['location'] + '&arrival_time=' + start_time + '&travelmode=transit')
